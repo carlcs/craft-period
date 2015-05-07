@@ -22,4 +22,10 @@ class DatePeriodPlugin extends BasePlugin
 	{
 		return 'https://github.com/carlcs/craft-dateperiod';
 	}
+
+	public function addTwigExtension()
+	{
+		Craft::import('plugins.dateperiod.twigextensions.DatePeriodTwigExtension');
+		return new DatePeriodTwigExtension();
+	}
 }
