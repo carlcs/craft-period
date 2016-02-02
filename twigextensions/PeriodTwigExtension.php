@@ -1,7 +1,7 @@
 <?php
 namespace Craft;
 
-class DatePeriodTwigExtension extends \Twig_Extension
+class PeriodTwigExtension extends \Twig_Extension
 {
     /**
      * Returns the name of the extension.
@@ -10,7 +10,7 @@ class DatePeriodTwigExtension extends \Twig_Extension
      */
     public function getName()
     {
-        return 'Date Period';
+        return 'Period';
     }
 
     /**

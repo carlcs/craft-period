@@ -1,11 +1,11 @@
 <?php
 namespace Craft;
 
-class DatePeriodPlugin extends BasePlugin
+class PeriodPlugin extends BasePlugin
 {
     public function getName()
     {
-        return 'Date Period';
+        return 'Period';
     }
 
     public function getVersion()
@@ -25,22 +25,22 @@ class DatePeriodPlugin extends BasePlugin
 
     public function getDeveloperUrl()
     {
-        return 'https://github.com/carlcs/craft-dateperiod';
+        return 'https://github.com/carlcs/craft-period';
     }
 
     public function getDocumentationUrl()
     {
-        return 'https://github.com/carlcs/craft-dateperiod';
+        return 'https://github.com/carlcs/craft-period';
     }
 
     public function getReleaseFeedUrl()
     {
-        return 'https://github.com/carlcs/craft-dateperiod/raw/master/releases.json';
+        return 'https://github.com/carlcs/craft-period/raw/master/releases.json';
     }
 
     public function addTwigExtension()
     {
-        Craft::import('plugins.dateperiod.twigextensions.DatePeriodTwigExtension');
-        return new DatePeriodTwigExtension();
+        Craft::import('plugins.period.twigextensions.PeriodTwigExtension');
+        return new PeriodTwigExtension();
     }
 }
