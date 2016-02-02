@@ -3,29 +3,29 @@ namespace Craft;
 
 class DatePeriodPlugin extends BasePlugin
 {
-	function getName()
-	{
-		return 'Date Period';
-	}
+    public function getName()
+    {
+        return 'Date Period';
+    }
 
-	function getVersion()
-	{
-		return '1.0';
-	}
+    public function getVersion()
+    {
+        return '1.0';
+    }
 
-	function getDeveloper()
-	{
-		return 'carlcs';
-	}
+    public function getDeveloper()
+    {
+        return 'carlcs';
+    }
 
-	function getDeveloperUrl()
-	{
-		return 'https://github.com/carlcs/craft-dateperiod';
-	}
+    public function getDeveloperUrl()
+    {
+        return 'https://github.com/carlcs/craft-dateperiod';
+    }
 
-	public function addTwigExtension()
-	{
-		Craft::import('plugins.dateperiod.twigextensions.DatePeriodTwigExtension');
-		return new DatePeriodTwigExtension();
-	}
+    public function addTwigExtension()
+    {
+        Craft::import('plugins.dateperiod.twigextensions.DatePeriodTwigExtension');
+        return new DatePeriodTwigExtension();
+    }
 }
